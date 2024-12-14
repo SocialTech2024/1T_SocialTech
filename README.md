@@ -22,12 +22,12 @@
 ## Установка
 1. Клонировать репозиторий:
    ```bash
-   git clone 
+   git clone https://github.com/SocialTech2024/1T_SocialTech.git
    ```
 
 2. Перейти в каталог репозитория
    ```bash
-   cd 1t_backend
+   cd 1T_SocialTech
    ```
 3. Запуск проекта возможен двумя способами.
 - При помощи docker-compose 
