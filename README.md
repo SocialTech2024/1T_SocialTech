@@ -29,13 +29,8 @@
    ```bash
    cd 1T_SocialTech
    ```
-3. Запуск проекта возможен двумя способами.
-- При помощи docker-compose 
-  ```bash
-   cd docker
-   docker-compose -f app.docker-compose.yml up
-   ```
-- Ручной запуск(рекомендуется)
+3. Запуск проекта.
+
   ```bash
    pip install -r requirements.txt
    cd docker
@@ -44,5 +39,5 @@
    python -m uvicorn app.main:app --reload 
    ```
 
-## Полная документация к API доступна по [ссылке](http://localhost:8000/docs)
+## Документация к API в Swagger доступна по [ссылке](http://localhost:8000/docs) после запуска.
 
