@@ -1,0 +1,17 @@
+services:
+  database:
+    build:
+      context: .
+      dockerfile: database.Dockerfile
+    environment:
+      POSTGRES_DB: 1t
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:
+    driver: local

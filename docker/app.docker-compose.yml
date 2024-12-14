@@ -1,0 +1,24 @@
+services:
+  database:
+    build:
+      context: .
+      dockerfile: database.Dockerfile
+    environment:
+      POSTGRES_DB: 1t
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build:
+      context: ..
+      dockerfile: backend.Dockerfile
+    depends_on:
+      - database
+    ports:
+      - "8000:8000"
+
+
