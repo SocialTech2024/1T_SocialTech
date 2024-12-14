@@ -17,7 +17,6 @@
 - NumPy v2.0.2
 - requests v2.32.3
 - Pydantic v1.8.2
-- python-dotenv v1.0.1
 
 ## Установка
 1. Клонировать репозиторий:
